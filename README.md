@@ -5,6 +5,12 @@ A simple and interactive Currency Converter Web App that fetches real-time excha
 <!-- Replace with your actual screenshot filename -->
 ![Screenshot](Screenshot.png)
 
+# 🌐 Live Demo
+
+Check out the live demo of the Currency Converter app: 
+
+[🌐 Live Demo - CurrencyXchange](https://hardik-jindal.github.io/CurrencyXchange/)
+
 ## 🚀 Features
 
 - Convert between any two currencies
