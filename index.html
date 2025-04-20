@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="gold-coin.svg">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency converter</h2>
+        <form action="">
+            <div class="amount">
+                <p>Enter amount</p>
+                <input type="text" value="100">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="selectcontainer">
+                        <img id="fromFlag" src="https://flagsapi.com/US/flat/64.png" alt="">
+                        <select name="from" id="fromCurrency">
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-right-left"></i>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="selectcontainer">
+                        <img id="toFlag" src="https://flagsapi.com/IN/flat/64.png" alt="">
+                        <select name="to" id="toCurrency">
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg"></div>
+            <button>Get exchange rate</button>
+        </form>
+    </div>
+
+    <!-- Raining money effect -->
+    <div class="money">$</div>
+    <div class="money">💰</div>
+    <div class="money">💵</div>
+    <div class="money">💸</div>
+    <div class="money">$</div>
+    <div class="money">💰</div>
+    <div class="money">🪙</div>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

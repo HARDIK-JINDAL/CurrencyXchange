@@ -1,0 +1,270 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #752b2b, #a34a4a, #c77c4a);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 1rem;
+    min-height: 50vh;
+    width: 50vh;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Softer, larger shadow for depth */
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    font-size: 1.2rem;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for depth */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.container:hover {
+    transform: scale(1.02); /* Slight pop effect */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.amount p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select, button, input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 2px solid #65755f; /* Deep green border */
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.75rem;
+    background: #aec3a5; /* Muted green for a soft, premium feel */
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #305259; /* Deep blue-green for contrast */
+    outline: none;
+}
+
+/* Hover effect */
+form input:hover {
+    border-color: #305259; /* Darker green for depth */
+    background: #8ba0a3; /* Slightly desaturated green */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+/* Focus effect */
+form input:focus {
+    border-color: #305259;
+    background: #a3b18a; /* Gentle green shade */
+    box-shadow: 0px 4px 12px rgba(48, 82, 89, 0.4); /* Soft green glow */
+    transform: scale(1.02); /* Slight pop effect */
+}
+
+/* Dropdown section */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1.5rem; /* Adjust spacing between elements */
+}
+#swapBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+#swapBtn:hover {
+  
+    color: #007bff;
+}
+
+
+/* Individual dropdown container */
+.selectcontainer {
+    display: flex;
+    align-items: center;
+    width: 7rem; /* Adjusted width for better alignment */
+    padding: 8px;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    background: #ffffff;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Flag and select alignment */
+.selectcontainer img {
+    max-width: 1.87rem;
+    margin-right: 4px;
+}
+
+/* Ensuring the background effect is always present */
+.selectcontainer {
+    background: linear-gradient(135deg, rgba(255, 75, 92, 0.2), rgba(255, 118, 117, 0.2));
+    border-color: #ff4b5c;
+    position: relative; /* Needed for pseudo-element */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styling for the select dropdown */
+.selectcontainer select {
+    background-color: transparent;
+    font-size: 1rem;
+    flex-grow: 1; /* Ensures it expands properly */
+    text-align: center; /* Centers the text */
+    border: none;
+    outline: none;
+    color: inherit; /* Keeps text color consistent */
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Hover effect - only a pop */
+.selectcontainer:hover {
+    transform: scale(1.08); /* Subtle pop */
+    box-shadow: 0px 5px 15px rgba(255, 75, 92, 0.3); /* Soft glow effect */
+}
+
+/* Inner glow effect on hover */
+.selectcontainer:hover::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 75, 92, 0.3), transparent);
+    transition: 0.4s ease-out;
+    z-index: -1;
+}
+
+
+/* Glow follows hover */
+.selectcontainer:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.dropdown i {
+    font-size: 1.8rem;
+    color: #ff4b5c;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Message area */
+.msg {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e847f;
+}
+
+/* Button styling */
+form button {
+    height: 3rem;
+    background: linear-gradient(135deg, #ff9500, #ff5e00); 
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(255, 94, 0, 0.4);
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Glow effect when hovered */
+form button:hover {
+    background: linear-gradient(135deg, #ff7700, #ff4500);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 69, 0, 0.6);
+}
+
+/* Button click effect */
+form button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 8px rgba(255, 69, 0, 0.5);
+}
+
+/* Background with animated money rain */
+
+.money {
+    position: absolute;
+    top: -10%;
+    font-size: 2.5rem;
+    color: #ffd700; /* Gold for coins */
+    opacity: 0.9;
+    animation: rainMoney linear infinite;
+}
+
+/* More money falling */
+.money:nth-child(1) { left: 5%; animation-duration: 2s; }
+.money:nth-child(2) { left: 15%; animation-duration: 3s; }
+.money:nth-child(3) { left: 25%; animation-duration: 2.5s; }
+.money:nth-child(4) { left: 35%; animation-duration: 3.5s; }
+.money:nth-child(5) { left: 45%; animation-duration: 2.2s; }
+.money:nth-child(6) { left: 55%; animation-duration: 4s; }
+.money:nth-child(7) { left: 65%; animation-duration: 2.8s; }
+.money:nth-child(8) { left: 75%; animation-duration: 3.2s; }
+.money:nth-child(9) { left: 85%; animation-duration: 2.6s; }
+.money:nth-child(10) { left: 95%; animation-duration: 3s; }
+.money:nth-child(11) { left: 10%; animation-duration: 2.7s; }
+.money:nth-child(12) { left: 30%; animation-duration: 3.3s; }
+.money:nth-child(13) { left: 50%; animation-duration: 2.4s; }
+.money:nth-child(14) { left: 70%; animation-duration: 3.1s; }
+.money:nth-child(15) { left: 90%; animation-duration: 2.9s; }
+
+/* Falling animation */
+@keyframes rainMoney {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
